@@ -1,0 +1,22 @@
+name: CI
+
+# 킷이 깨진 채 올라가지 않게 본다.
+#  · CSS 문법 (중괄호 짝, 정의 안 된 토큰)
+#  · preview.html 이 가리키는 파일이 실제로 있는지
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  check:
+    name: 킷 검사
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 검사
+        run: python3 tools/check.py
