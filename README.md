@@ -32,7 +32,7 @@ CI 에 복사본이 어긋났는지 보는 검사를 넣습니다. 태그로 고
 - name: 디자인 킷 복사본이 원본과 같은가
   run: |
     curl -sSfL -o /tmp/kit.css \
-      https://raw.githubusercontent.com/themakerrobot/themaker-ui/v1.2.0/themaker-ui.css
+      https://raw.githubusercontent.com/themakerrobot/themaker-ui/v1.3.0/themaker-ui.css
     diff -u /tmp/kit.css css/themaker-ui.css
 ```
 
@@ -75,7 +75,7 @@ CI 에 복사본이 어긋났는지 보는 검사를 넣습니다. 태그로 고
 - **패널**: `.pan > .ph(제목) + .pb(내용)` / 구획 나누기 `.sec2 > .st`
 - **버튼** `.db`: 기본(외곽선) / `.go`(주 동작, 남색 채움) / `.on`(토글 눌림) /
   `.warn`(강한 경고 채움) / `.danger`(조용한 지우기 — 호버 때만 경고색)
-- **헤더 아이콘 버튼** `.hbtn`: 도움말·전체화면처럼 글자 없는 28px 버튼
+- **헤더 아이콘 버튼** `.hbtn`: 도움말·전체화면처럼 글자 없는 26px 버튼
 - **입력**: `.inp` (텍스트·셀렉트 공용), 슬라이더는 기본 `input[type=range]`
 - **카드**: `.cls`·`.mradio` (`.on`=선택) — 종류·모델 고르기
 - **표**: `.mk-table`, 얇은 목록 줄 `.saved`, 파일 놓기 `.dropzone`
