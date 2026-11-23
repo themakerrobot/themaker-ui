@@ -32,7 +32,7 @@ CI 에 복사본이 어긋났는지 보는 검사를 넣습니다. 태그로 고
 - name: 디자인 킷 복사본이 원본과 같은가
   run: |
     curl -sSfL -o /tmp/kit.css \
-      https://raw.githubusercontent.com/themakerrobot/themaker-ui/v1.3.0/themaker-ui.css
+      https://raw.githubusercontent.com/themakerrobot/themaker-ui/v1.4.0/themaker-ui.css
     diff -u /tmp/kit.css css/themaker-ui.css
 ```
 
