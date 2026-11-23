@@ -119,7 +119,6 @@ CI 에 복사본이 어긋났는지 보는 검사를 넣습니다. 태그로 고
 ## 쓰는 곳
 
 - [teach-lab](https://github.com/themakerrobot/teach-lab)
-- [sense-lab](https://github.com/themakerrobot/sense-lab)
 - pibo-lab · edge-lab · factory-lab (아직 옮기지 않음)
 
 ## 라이선스

@@ -5,7 +5,7 @@ name: 릴리스 태그 달기
 #
 #   Actions → 릴리스 태그 달기 → Run workflow → tag 에 v1.1.0 입력
 #
-# 서비스(teach-lab · sense-lab 등)는 이 태그 번호로 킷을 고정해 가져간다.
+# 서비스(teach-lab 등)는 이 태그 번호로 킷을 고정해 가져간다.
 
 on:
   workflow_dispatch:
