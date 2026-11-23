@@ -32,7 +32,7 @@ CI 에 복사본이 어긋났는지 보는 검사를 넣습니다. 태그로 고
 - name: 디자인 킷 복사본이 원본과 같은가
   run: |
     curl -sSfL -o /tmp/kit.css \
-      https://raw.githubusercontent.com/themakerrobot/themaker-ui/v1.0.0/themaker-ui.css
+      https://raw.githubusercontent.com/themakerrobot/themaker-ui/v1.1.0/themaker-ui.css
     diff -u /tmp/kit.css css/themaker-ui.css
 ```
 
@@ -41,8 +41,8 @@ CI 에 복사본이 어긋났는지 보는 검사를 넣습니다. 태그로 고
 ## 컨셉
 
 **초등 교실의 활동지(학습지).** 미색 종이 바탕 + 옅은 점무늬, 갈색 괘선,
-남색 펜으로 쓴 답, 빨간 펜의 채점. 헤더는 활동지 머리표(이름 칸)처럼
-갈색 외곽선 상자이고, 서비스명은 명조체입니다.
+남색 펜으로 쓴 답, 빨간 펜의 채점. 헤더는 테두리 없는 흰 띠
+(옅은 그림자 한 줄)이고, 서비스명은 명조체입니다.
 
 ## 색 (토큰만 사용 — 새 색 금지)
 
@@ -52,7 +52,7 @@ CI 에 복사본이 어긋났는지 보는 검사를 넣습니다. 태그로 고
 | `--panel` | `#FFFFFF` | 패널·카드 |
 | `--panel2` | `#FBFAF5` | 패널 안 옅은 면 |
 | `--line` / `--line-soft` | `#9A8F7D` / `#DCD5C6` | 테두리 / 구분선 |
-| `--line-d` | `#4A3F2E` | 헤더 외곽선 |
+| `--line-d` | `#4A3F2E` | 진한 괘선 (강조 테두리) |
 | `--ink` `--ink2` `--ink3` | `#2A2620` `#4A423A` `#6B6255` | 본문 / 보조 / 힌트 |
 | `--acc` (`--pen-blue`) | `#1F5F7A` | 주 색: 주 버튼, 선택, 활성 탭 |
 | `--acc-ink` | `#12455C` | 주 색의 진한 글자·호버 |
